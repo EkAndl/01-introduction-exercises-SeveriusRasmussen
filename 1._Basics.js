@@ -27,7 +27,7 @@ const currentYearThird = +year + increment;
 // You cannot touch the first or the second line
 
 console.log(`The year is ${currentYearSecond}`);
-
+// Man kan vælge en af disse 21-23 variabler.
 
 
 // --------------------------------------
