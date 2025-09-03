@@ -5,7 +5,7 @@
 
 const letters = ["a", "b", "c"];
 // show b in the console 
-
+console.log(`Exercise 1: ` + letters[2]);
 
 // --------------------------------------
 // Exercise 2 - Array Positioning
@@ -13,7 +13,16 @@ const letters = ["a", "b", "c"];
 const friends = [];
 
 // What a lonely array. Add at least 3 friend objects to it.  
+/* -- dårlig kode: --
+friends[0] = "Søren";
+friends[1] = "Martin";
+friends[2] = "Jane";
+*/
 
+// Bedre kode med push-funktion:
+friends.push("Emil", "Thomas", "Signe")
+
+console.log(`Exercise 2: ` + friends)
 
 // --------------------------------------
 // Exercise 3 - Get the index of first occurance of that value. 
@@ -22,17 +31,20 @@ const significantMathNumbers = [0, 2.718, 3.14159, 1729];
 
 // You want to programmatically find where the number 1729 is in the array.
 // programmatically means that no finger counting allowed. There is a method for this (finding index based of value). 
+const findTheIndex = significantMathNumbers.indexOf(1729);
 
-
+console.log(`Exercise 3: ` + findTheIndex);
 // --------------------------------------
 // Exercise 4 - Inserting elements
 
 const diet = ["tomato", "cucumber", "rocket"];
 
+
 // You are a programmer. In one line (one statement) insert hamburger, soda and pizza between the elements cucumber and rocket
+diet.splice(2, 0, "hamburger", "soda", "pizza")
+// Indsæt elementer på index 2 (Mellem cucumber og rocket, og så pushede rocket frem).
 
-
-
+console.log(`Exercise 4: ` + diet)
 
 // --------------------------------------
 // Exercise 5 - Remove element
@@ -40,7 +52,9 @@ const diet = ["tomato", "cucumber", "rocket"];
 // Remove the LAST element of the array.
 // Don't remove by index. You know in advance that it's the last in the array because you are too full already. 
 
-
+const lastElementRemove = diet.pop();
+console.log(`Exercise 5: ` + diet);
+console.log(`Fjernet fra diet-arrayet: ` + lastElementRemove);
 
 
 
@@ -48,7 +62,9 @@ const diet = ["tomato", "cucumber", "rocket"];
 // Exercise 6 - Copy array
 
 // You really like your daily diet from last exercise. Copy it to a new array called dinnerTray so you can give it to a friend.  
+const dinnerTray = diet;
 
+console.log(`Exercise 6: ` + dinnerTray);
 
 
 // --------------------------------------
@@ -57,7 +73,11 @@ const diet = ["tomato", "cucumber", "rocket"];
 const lettersExpanded = ["a", "b", "c", "d", "e", "f", "g", "h"];
 
 // log every second char in the array starting from b
-
+console.log(`Exercise 7:`)
+for (let i = 1; i < lettersExpanded.length; i += 2) {
+    console.log(lettersExpanded[i]);
+}
+console.log(`___________________________`)
 
 
 // --------------------------------------
@@ -69,7 +89,15 @@ const discardedNumbers = [];
 
 // log the element if the number is above 6 or below 0
 // else push them to the array discardedNumbers
-
+console.log("Exercise 8:")
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] > 6 || numbers[i] < 0) {
+        console.log(numbers[i]);
+    } else {
+        discardedNumbers.push(numbers[i]);
+    }
+}
+console.log(`Discarded Numbers: ` + discardedNumbers)
 // --------------------------------------
 
 

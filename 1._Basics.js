@@ -18,16 +18,24 @@ console.log(`My first name is ${firstName} and my last name is ${lastName}`);
 const year = "2024";
 const increment = 1;
 
-const currentYearFirst = Number(year) + increment;
-const currentYearSecond = parseInt(year) + increment;
-const currentYearThird = +year + increment;
-
 // Add the year plus the increment
 // The result should be 2025
 // You cannot touch the first or the second line
 
-console.log(`The year is ${currentYearSecond}`);
-// Man kan vælge en af disse 21-23 variabler.
+const currentYearFirst = Number(year) + increment;
+const currentYearSecond = parseInt(year) + increment;
+const currentYearThird = +year + increment;
 
+//console.log(currentYearFirst);
+//console.log(currentYearSecond);
+//console.log(currentYearThird);
+console.log(`The year is ${currentYearSecond}`);
+// Man kan vælge en af disse variabler fra linjer 25 til 27.
+
+const possibleNumber = "01235adsf8";
+
+console.log(Number(possibleNumber));
+console.log(parseInt(possibleNumber));
+console.log(+possibleNumber);
 
 // --------------------------------------

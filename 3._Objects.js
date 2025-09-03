@@ -5,18 +5,24 @@
 
 const greetings = { message: "Hello, earthling! I bring peace." };
 
-// Log the message 
+// Log the message
+console.log(`${greetings.message}`);
 
 // --------------------------------------
 // Exercise 2 - Defining an object.
 
 // Create an object that has your name and age. 
-
-
+const StudentSøren = {
+    name: "Søren",
+    age: 36
+}
+console.log(`${StudentSøren.age}`);
 // --------------------------------------
 // Exercise 3 - Add a key-value pair
 
-const stackOverflow = {};
+const stackOverflow = {"isAllowed": 1};
+
+console.log(`${stackOverflow.isAllowed}`)
 
 // make a rule called isAllowed and let the value be true
 
@@ -26,8 +32,10 @@ const stackOverflow = {};
 const thisSong = { description: "The best song in the world." };
 
 // remove the property "description" and add a property called "about" that should say "Just a tribute." 
+delete thisSong.description;
+thisSong.about = "Just a tribute";
 
-
+console.log(thisSong.about)
 // --------------------------------------
 
 
